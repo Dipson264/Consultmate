@@ -1,19 +1,19 @@
 <!-- Carousel -->
-<div id="hs-carousel" class="relative" data-hs-carousel='{"loadingClasses": "opacity-0", "dotsItemClasses": "hs-carousel-active:bg-primary-active hs-carousel-active:border-primary-active size-3 border border-line-4 rounded-full cursor-pointer", "isAutoPlay": true}' >
-  <div class="hs-carousel relative w-full min-h-96 overflow-hidden">
+<div id="hs-carousel" class="relative" data-hs-carousel='{"loadingClasses": "opacity-0", "dotsItemClasses": "hs-carousel-active:bg-primary-active hs-carousel-active:border-primary-active size-3 border border-line-4 rounded-full cursor-pointer", "isAutoHeight": true}' >
+  <div class="hs-carousel relative w-full overflow-hidden">
     <!-- Carousel Body -->
-    <div class="hs-carousel-body flex flex-nowrap absolute top-0 bottom-0 start-0 transition-transform duration-700 opacity-0">
-      <div class="hs-carousel-slide ">
+    <div class="hs-carousel-body flex flex-nowrap transition-[height,transform] duration-700 opacity-0">
+      <div class="hs-carousel-slide h-96">
         <div class="flex justify-center h-full bg-surface p-6">
           <span class="self-center text-4xl text-foreground transition duration-700">First slide</span>
         </div>
       </div>
-      <div class="hs-carousel-slide ">
+      <div class="hs-carousel-slide h-80">
         <div class="flex justify-center h-full bg-surface-1 p-6">
           <span class="self-center text-4xl text-foreground transition duration-700">Second slide</span>
         </div>
       </div>
-      <div class="hs-carousel-slide ">
+      <div class="hs-carousel-slide h-72">
         <div class="flex justify-center h-full bg-surface-2 p-6">
           <span class="self-center text-4xl text-foreground transition duration-700">Third slide</span>
         </div>
