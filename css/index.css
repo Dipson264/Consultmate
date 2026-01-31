@@ -90,5 +90,24 @@
             }
         }
 
-       
+@media (max-width: 768px) {
+  #navbar-default {
+    top: 45;
+  }
+}
     
+
+@media (max-width: 767px) {
+  /* completely disable dropdown menus */
+  .dropdown-menu {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transform: none !important;
+  }
+
+  /* stop hover from triggering dropdown */
+  .dropdown:hover .dropdown-menu {
+    display: none !important;
+  }
+}
