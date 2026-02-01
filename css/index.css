@@ -1,5 +1,5 @@
 .my-section{
-    color: rgb(0, 0, 0);
+    color: #3d3142;
 }
 
 
@@ -14,7 +14,7 @@
 }
 
 .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
-    background: #4F46E5 !important;
+    background: #3d3142 !important;
 }
 
 .nav-link {
@@ -111,3 +111,10 @@
     display: none !important;
   }
 }
+
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+  .font-script {
+    font-family: 'Dancing Script', cursive;
+  }
+
+

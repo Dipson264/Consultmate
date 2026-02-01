@@ -11,17 +11,16 @@
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
+    <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
 
-<body style="background-color: eaebed;">
+<body>
 
 
     <!-- Navbar -->
-    <nav class=" fixed  top-4 z-50 shadow rounded-full py left-1/2 -translate-x-1/2 "" 
-        style=" background-color: #ffffff; width: 95%; box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0,
-        0, 0, 0.3) 0px 30px 60px -30px;">
+    <nav class=" fixed top-4 z-50 shadow rounded-full py left-1/2 -translate-x-1/2 " style=" background-color: #ffffff;
+    width: 95%; box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3  ">
 
             <!-- Logo -->
@@ -48,10 +47,10 @@
          mt-2 md:mt-0
          px-4 md:px-0">
                 <ul
-                    class="flex flex-col md:flex-row md:items-center md:space-x-6 mt-4 md:mt-0 bg-gray-50 md:bg-transparent rounded-lg p-2 md:p-0">
+                    class="flex flex-col md:flex-row md:items-center md:space-x-1 mt-4 md:mt-0 bg-gray-50 md:bg-transparent rounded-lg p-2 md:p-0">
 
                     <li>
-                        <a href="/Pages/index.html"
+                        <a href="/index.html"
                             class="  my-section nav-link  block px-4 py-2 font-semibold text-gray-700 rounded-lg hover:bg-blue-50 hover:text-blue-600">
                             Home
                         </a>
@@ -96,7 +95,8 @@
                             <div class="grid grid-cols- gap-1 p-2"> <a href="#"
                                     class="flex items-center p-3 rounded-lg hover:bg-blue-50 transition-colors duration-200">
                                     <div class="bg-blue-100 p-2 rounded-lg mr-3"> <i
-                                            class="fas fa-book text-blue-600"></i> </div>
+                                            class="fas fa-book text-blue-600"></i>
+                                    </div>
                                     <div>
                                         <div class="font-medium text-gray-800">Undergraduate</div>
                                         <div class="text-xs text-gray-500">Proceeded after +2 study in Nepal</div>
@@ -104,7 +104,8 @@
                                 </a> <a href="#"
                                     class="flex items-center p-3 rounded-lg hover:bg-blue-50 transition-colors duration-200">
                                     <div class="bg-red-100 p-2 rounded-lg mr-3"> <i
-                                            class="fas fa-headset text-red-600"></i> </div>
+                                            class="fas fa-headset text-red-600"></i>
+                                    </div>
                                     <div>
                                         <div class="font-medium text-gray-800">Master's Degree</div>
                                         <div class="text-xs text-gray-500">Proceeded after bachelors in Nepal</div>
@@ -132,6 +133,9 @@
 
         </div>
     </nav>
+    <!-- Navbar Ends -->
+
+
 
     <!-- Hero Banner -->
     <section class=" min-h-dvh overflow-hidden w-full ">
@@ -157,29 +161,139 @@
                     and find what actually works for you.
                 </p>
 
-                <div class="flex flex-col sm:flex-row justify-center gap-4">
-                    <button class="bg-white text-black px-6 py-3 rounded-lg font-medium">
-                        Find Your Best Country
+                <div class="flex flex-col sm:flex-row justify-center gap-4  ">
+                    <button
+                        class="z-50 bg-white text-black px-6 py-3 rounded-full font-medium transition duration-500 ease-in-out  transform  hover:scale-110  ">
+                        <a href="#">
+                            Find Your Best Country
+                        </a>
+
                     </button>
                     <button
-                        class="border border-white text-white px-6 py-3 rounded-lg transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg">
-                        How It Works
+                        class=" border rounded-full border-white text-white px-6 py-3  transition duration-500 ease-in-out  transform  hover:scale-110">
+                        <a href="#">
+                            Find Your Best Country
+                        </a>
                     </button>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Hero text -->
-    <div class="flex justify-center">
-        <h4 class="text-4xl md:text-4xl lg:text-1xl font-bold text-white mb-6 ">
-            Who is this for?
-            </h>
-
-    </div>
+    <!-- Hero Banner Ends-->
 
 
 
+    <!-- Section Intro -->
+    <section class="relative py-20 px-4 sm:px-2 lg:px-8 overflow-hidden bg-gray-50">
+        <!-- Background script text 
+  <div class="absolute inset-0 flex items-center justify-center opacity-5">
+    <p class="text-[10rem] md:text-[20rem] font-script tracking-wide leading-none text-gray-400 select-none">c</p>
+  </div>-->
+
+        <div class="relative max-w-7xl mx-auto text-center">
+            <!-- Main heading with light to dark gradient -->
+            <h1 class="mb-8 text-5xl md:text-7xl lg:text-7xl font-bold tracking-tight">
+                <span class="bg-clip-text text-transparent bg-gradient-to-b from-gray-300 via-gray-500 to-gray-800">
+                    Who Is Consultmate For?
+                </span>
+                <span class="block text-4xl md:text-5xl lg:text-5xl font-medium text-gray-600 mt-4">Built for Students,
+                    Simplified for You</span>
+            </h1>
+
+            <!-- Decorative divider -->
+            <div class="relative my-10">
+                <div class="absolute inset-0 flex items-center">
+                    <div class="w-full  border-t border-gray-200"></div>
+                </div>
+                <div class="relative flex justify-center">
+                    <span class="px-4 bg-gray-50 text-xl text-gray-500 font-serif italic">
+                        Clear guidance. Zero office visits.
+                    </span>
+                </div>
+            </div>
+
+
+            <!-- cards list -->
+            <div class="mx-auto my-10 grid max-w-screen-xl gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
+                <!-- Card 1 -->
+                <div
+                    class="group cursor mx-4 overflow-hidden rounded-2xl bg-white shadow-xl duration-200 hover:-translate-y-4">
+                    <div class="flex h-60 flex-col justify-between overflow-hidden">
+                        <img src="/assets/Others/High school Students.jpg"
+                            class="group-hover:scale-110 h-full w-full object-cover duration-200" />
+                    </div>
+                    <div class="flex-1 overflow-hidden bg-white px-6 py-8">
+                        <h5 class="group-hover:text-[#4f5764] mb-4 text-xl font-bold">+2 Students (Undergraduate)</h5>
+                        <p class="mb-8 text-gray-600">Just finished high school and want to study abroad for your bachelor's? We'll help you choose the right country and program without the overwhelming information overload.</p>
+                        <div class="flex justify-between">
+                            <a href="#" class="group text-lg font-bold focus:text-[#4f5764] hover:text-[#4f5764]">
+                                
+                                <span class="underline">Learn More</span>
+                            </a>
+                            <div class="max-w-full flex-none lg:px-4">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="group cursor mx-4 overflow-hidden rounded-2xl bg-white shadow-xl duration-200 hover:-translate-y-4">
+                    <div class="flex h-60 flex-col justify-between overflow-hidden">
+                        <img src="/assets/Others/Graduation program.jpg"
+                            class="group-hover:scale-110 h-full w-full object-cover duration-200" />
+                    </div>
+                    <div class="flex-1 overflow-hidden bg-white px-6 py-8">
+                        <h5 class="group-hover:text-[#4f5764] mb-4 text-xl font-bold"> Bachelor Graduates</h5>
+                        <p class="mb-8 text-gray-600">Ready for a master's degree abroad? Let's find universities that match your goals and budget, with honest guidance on what to expect without any hassles.</p>
+                        <div class="flex justify-between">
+                            <a href="#" class="group text-lg font-bold focus:text-[#4f5764] hover:text-[#4f5764]">
+                                
+                                <span class="underline">Learn More</span>
+                            </a>
+                            <div class="max-w-full flex-none lg:px-4">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="group cursor mx-4 overflow-hidden rounded-2xl bg-white shadow-xl duration-200 hover:-translate-y-4">
+                    <div class="flex h-60 flex-col justify-between overflow-hidden">
+                        <img src="/assets/Others/Professional IT.jpg"
+                            class="group-hover:scale-110 h-full w-full object-cover duration-200" />
+                    </div>
+                    <div class="flex-1 overflow-hidden bg-white px-6 py-8">
+                        <h5 class="group-hover:text-[#4f5764] mb-4 text-xl font-bold">Career Switchers</h5>
+                        <p class="mb-8 text-gray-600">Want to change fields or upskill internationally? We'll help you understand if it's the right move and which programs actually make sense for your career</p>
+                        <div class="flex justify-between">
+                            <a href="#" class="group text-lg font-bold focus:text-[#4f5764] hover:text-[#4f5764]">
+                                
+                                <span class="underline">Learn More</span>
+                            </a>
+                            <div class="max-w-full flex-none lg:px-4">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Supporting text 
+    <p class="max-w-2xl mx-auto text-xl text-gray-600 font-light leading-relaxed">
+    Consultmate helps students access study and consultation info online, saving time and effort.
+    </p>-->
+        </div>
+
+    </section>
+
+
+
+    <!-- Section Intro Ends -->
 
 
 
@@ -195,8 +309,14 @@
 
 
 
+
+    <!-- Script for button -->
+    <script>
+        (function () { if (!window.chatbase || window.chatbase("getState") !== "initialized") { window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) }; window.chatbase = new Proxy(window.chatbase, { get(target, prop) { if (prop === "q") { return target.q } return (...args) => target(prop, ...args) } }) } const onLoad = function () { const script = document.createElement("script"); script.src = "https://www.chatbase.co/embed.min.js"; script.id = "GHPXig39VXHZjm3Z7UnuH"; script.domain = "www.chatbase.co"; document.body.appendChild(script) }; if (document.readyState === "complete") { onLoad() } else { window.addEventListener("load", onLoad) } })();
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+
 </body>
 
 </html>
