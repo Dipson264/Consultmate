@@ -1,3 +1,4 @@
+
 .my-section {
     color: #006989;
 
@@ -24,7 +25,7 @@
     transition: all 0.3s ease;
 }
 
-/* Only show underline animation on desktop /
+/* Only show underline animation on desktop */
 @media (min-width: 768px) {
     .nav-link::after {
         content: '';
@@ -42,14 +43,14 @@
     }
 }
 
-/ Darker background on hover for mobile menu items /
+/* Darker background on hover for mobile menu items */
 @media (max-width: 767px) {
     .nav-link:hover {
         background-color: rgba(0, 0, 0, 0.05);
     }
 }
 
-/ Only enable dropdown hover on medium screens and above (desktop) */
+/* Only enable dropdown hover on medium screens and above (desktop) */
 @media (min-width: 768px) {
     .dropdown:hover .dropdown-menu {
         opacity: 1;
