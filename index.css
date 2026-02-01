@@ -1,3 +1,11 @@
+.my-section {
+    color: #006989;
+
+}
+
+.my-section:hover {
+    color: #013747;
+}
 .swiper-wrapper {
     width: 100%;
     height: max-content !important;
@@ -8,7 +16,7 @@
 }
 
 .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
-    background: #4F46E5 !important;
+    background: #000002 !important;
 }
 
 .nav-link {
@@ -16,25 +24,38 @@
     transition: all 0.3s ease;
 }
 
-.nav-link::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: -4px;
-    left: 0;
-    background-color: currentColor;
-    transition: width 0.3s ease;
+/* Only show underline animation on desktop /
+@media (min-width: 768px) {
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -4px;
+        left: 0;
+        background-color: currentColor;
+        transition: width 0.3s ease;
+    }
+
+    .nav-link:hover::after {
+        width: 100%;
+    }
 }
 
-.nav-link:hover::after {
-    width: 100%;
+/ Darker background on hover for mobile menu items /
+@media (max-width: 767px) {
+    .nav-link:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+    }
 }
 
-.dropdown:hover .dropdown-menu {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
+/ Only enable dropdown hover on medium screens and above (desktop) */
+@media (min-width: 768px) {
+    .dropdown:hover .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
 }
 
 .dropdown-menu {
@@ -59,27 +80,27 @@
 }
 
 .avatar-ring {
-    box-shadow: 0 0 0 2px white, 0 0 0 4px #3B82F6;
+    box-shadow: 0 0 0 2px white, 0 0 0 4px #000000;
 }
 
 .hero-slide {
-            transition: opacity 0.8s ease, transform 0.8s ease;
-        }
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
 
-        .slide-content {
-            transition: all 0.6s ease 0.3s;
-        }
+.slide-content {
+    transition: all 0.6s ease 0.3s;
+}
 
-        .fade-in {
-            animation: fadeIn 1s ease-in;
-        }
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
 
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
 
-            to {
-                opacity: 1;
-            }
-        }
+    to {
+        opacity: 1;
+    }
+}
